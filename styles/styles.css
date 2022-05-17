@@ -1,0 +1,316 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+  }
+   
+  html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Inter", "Arial", sans-serif;
+    font-size: 16px; 
+    line-height: 22px;
+    color: #2D3440;
+    background-color: #FFFFFF; 
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0 auto;
+    width: 1366px;
+    background-color: #FEAFC3;
+  }
+
+  .main-container {
+    flex-grow: 1;
+  }
+
+  .content-container {
+    margin: 0 98px;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .reset-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ------header------ */
+
+  .navigation-link-general {
+    line-height: 20px;
+    font-weight: 400;
+    color: #2D3440;
+    text-decoration: none;
+  }
+
+  .company-phone {
+    line-height: 20px;
+    font-weight: 700;
+    font-style: normal;
+    color: #2D3440;
+    text-decoration: none;
+
+  }
+
+  .navigation-link-personal {
+    font-size: 14px; 
+    line-height: 20px;
+    font-weight: 400;
+    color: #2D3440;
+    text-decoration: none;
+  }
+
+  /* ------gallery------ */
+
+  .goods-title {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 900;
+  }
+
+  .goods-description {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  /* ------gifts------ */
+
+  .gifts-title,
+  .popular-tastes-title,
+  .shop-description-title{
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .gifts-offer {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .gifts-description {
+    font-weight: 400;
+  }
+
+  /* ------popular-tastes------ */
+
+  .taste-title,
+  .price {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .taste-description {
+    font-weight: 400;
+    color: #565C66;
+  }
+
+  /* ------shop-description------ */
+
+  .description-item {
+    font-weight: 400;
+    color: #565C66;
+  }
+
+  .shop-description {
+    background-image: url("../images/waffle-background.png");
+    background-repeat: no-repeat;
+    border-radius: 16px;
+  }
+
+  /* ------blocks-wrapper------ */
+
+  .article-title {
+    line-height: 20px;
+    font-weight: 400;
+    color: #565C66;
+  }
+
+  .new-article {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .subscribe-description {
+    font-weight: 400;
+    color: #565C66;
+  }
+
+  .field {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #B9B9B9;
+  }
+
+  /* ------delivery------ */
+
+  .delivery-title {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+  }
+
+  .delivery-description,
+  .fill-form {
+    font-weight: 400;
+    color: #565C66;
+  }
+
+  .form-label {
+    line-height: 20px;
+    font-weight: 700;
+  }
+
+  .form-field {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #B9B9B9;
+  }
+
+  .delivery {
+    background-image: url("../images/delivery-background.jpg");
+    background-repeat: no-repeat;
+    border-radius: 16px;
+  }
+
+  /* ------contacts------ */
+
+  .contacts-description,
+  .contacts-for-order {
+    font-weight: 400;
+    color: #565C66;
+  }
+
+  .office-address,
+  .office-phone {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+    color: #2D3440;
+    text-decoration: none;
+  }
+
+  .work-time {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #565C66;
+  }
+
+  /* ------catalog------ */
+
+  /* ------breadcrumbs------ */
+
+  .breadcrumbs-title {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+  }
+
+  .breadcrumbs-link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #2D3440;
+    text-decoration: none;
+  }
+
+  /* ------sorting------ */
+
+  .select-control,
+  .price-title,
+  .filter-title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .range-input,
+  .popular,
+  .control-label {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #2D3440;
+  }
+
+  /* ------catalog------ */
+
+  .catalog-title,
+  .catalog-price {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  
+  .catalog-description {
+    font-weight: 400;
+    color: #565C66;
+  }
+
+  .pagination-link {
+    line-height: 20px;
+    font-weight: 400;
+    color: #2D3440;
+    text-decoration: none;
+  }
+
+  /* ------footer------ */
+
+  .information-link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #2D3440;
+  }
+
+  .information-item:nth-child(1) a {
+    font-weight: 700;
+  }
+   
