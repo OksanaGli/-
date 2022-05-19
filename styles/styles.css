@@ -43,6 +43,10 @@
     background-color: #FEAFC3;
   }
 
+  .container-blue {
+    background-color: #69A9FF;
+  }
+
   .main-container {
     flex-grow: 1;
   }
@@ -70,11 +74,38 @@
 
   /* ------header------ */
 
+  .navigation {
+    display: flex;
+  }
+
+  .logo-image {
+    padding: 24px 0;
+  }
+
+  .navigation-list-general {
+    display: flex;
+    flex-wrap: wrap;
+    width: 530px;
+    align-items: center;
+    margin-left: 16px;
+  }
+
+  .navigation-item-general {
+    margin-right: 32px;
+  }
+
   .navigation-link-general {
     line-height: 20px;
     font-weight: 400;
     color: #2D3440;
     text-decoration: none;
+  }
+
+  .navigation-wrapper {
+    display: flex;
+    width: 450px;
+    align-items: center;
+    margin-left: auto;
   }
 
   .company-phone {
@@ -84,6 +115,11 @@
     color: #2D3440;
     text-decoration: none;
 
+  }
+
+  .navigation-list-personal {
+    display: flex;
+   
   }
 
   .navigation-link-personal {
@@ -110,6 +146,20 @@
 
   /* ------gifts------ */
 
+  .gifts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .offer-wrapper {
+    display: flex;
+    background-color: #FF7799;
+    border-radius: 16px;
+  }
+
   .gifts-title,
   .popular-tastes-title,
   .shop-description-title{
@@ -123,10 +173,25 @@
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    margin: 0 0 16px 0;
+    padding-top: 40px;
+    padding-left: 40px;
   }
 
   .gifts-description {
     font-weight: 400;
+    margin: 0 0 32px 0;
+    padding-left: 40px;
+  }
+
+  .button-gift {
+    margin: 0 0 40px 40px;
+  }
+
+  .gift-image {
+    padding-top: 28px;
+    padding-right: 15px;
+    margin-bottom: -44px;
   }
 
   /* ------popular-tastes------ */
@@ -143,6 +208,14 @@
     color: #565C66;
   }
 
+  .tastes-list {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    column-gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
   /* ------shop-description------ */
 
   .description-item {
@@ -154,9 +227,37 @@
     background-image: url("../images/waffle-background.png");
     background-repeat: no-repeat;
     border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 80px;
+  }
+
+  .shop-description-wrapper {
+    background-color: #FCFCFC;
+    border-radius: 16px;
+  }
+
+  .shop-description-title {
+    margin: 0;
+  }
+
+  .shop-description-list {
+    display: grid;
+    grid-template-columns: repeat(2, 442px);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 95px;
+    row-gap: 40px;
+    padding: 0 40px 56px 104px;
+    margin: 0;
   }
 
   /* ------blocks-wrapper------ */
+
+  .blocks-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 30px;
+    padding: 0;
+  }
 
   .article-title {
     line-height: 20px;
@@ -164,10 +265,21 @@
     color: #565C66;
   }
 
+  .article {
+    background-image: url("../images/backgroung-for-article.jpg");
+    background-repeat: no-repeat;
+    border-radius: 16px;
+  }
+
   .new-article {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+  }
+
+  .subscribe {
+    background-image: url("../images/background-for-subscribe.png");
+    background-repeat: no-repeat;
   }
 
   .subscribe-description {
