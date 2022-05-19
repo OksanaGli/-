@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/styles.css"> 
   </head>
   <body>
-    <div class="container">
+    <div class="container container-blue">
       <header class="main-header content-container">
         <nav class="navigation navigation-main">
           <a class="logo-link" href="#">
@@ -24,24 +24,26 @@
               <a class="navigation-link-general" href="#">О компании</a>
             </li>
           </ul>
-          <address class="header-address">
-            <a class="company-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          </address>
-          <ul class="navigation-list-personal reset-list">
-            <li class="navigation-item-personal">
-              <a class="navigation-link-personal" href="#">
-                <span class="visually-hidden">Поиск.</span>
-              </a>
-            </li>
-            <li class="navigation-item-personal">
-              <a class="navigation-link-personal" href="#">Вход</a>
-            </li>
-            <li class="navigation-item-personal">
-              <a class="navigation-link-personal" href="#">Пусто
-                <span class="visually-hidden">Корзина.</span>
-              </a>
-            </li>
-          </ul>
+          <div class="navigation-wrapper">
+            <address class="header-address">
+              <a class="company-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            </address>
+            <ul class="navigation-list-personal reset-list">
+              <li class="navigation-item-personal">
+                <a class="navigation-link-personal" href="#">
+                  <span class="visually-hidden">Поиск.</span>
+                </a>
+              </li>
+              <li class="navigation-item-personal">
+                <a class="navigation-link-personal" href="#">Вход</a>
+              </li>
+              <li class="navigation-item-personal">
+                <a class="navigation-link-personal" href="#">Пусто
+                  <span class="visually-hidden">Корзина.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main class="main-index main-container">
@@ -118,24 +120,182 @@
             </li>
           </ul>
         </section>
+        <section class="gallery-hidden content-container">
+          <h2 class="visually-hidden">Галерея мороженого.</h2>
+          <p class="goods-title">Сливочное мороженое со вкусом банана</p>
+          <p class="goods-description">
+            Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.  
+          </p>
+          <a class="button-order" href="#">Заказать</a>
+          <ul class="goods-list reset-list">
+            <li class="goods-item reset-list">
+              <button class="slider-button" type="button">
+                <span class="visually-hidden">Предыдущее фото.</span>
+              </button>
+              <img class="goods-image" src="#" width="306" height="507" alt="Сливочное мороженое.">
+              <button class="slider-button" type="button">
+                <span class="visually-hidden">Следующее фото.</span>
+              </button>
+            </li>
+            <li class="goods-item">
+              <img class="goods-image-small" src="#" width="100" height="150" alt="Карамельный пломбир.">
+            </li>
+            <li class="goods-item">
+              <img class="goods-image-small" src="#" width="100" height="150" alt="Пломбир с клубничным джемом.">
+            </li>
+          </ul>
+          <ol class="pagination-for-goods reset-list">
+            <li class="goods-pagination-item">
+              <button class="goods-pagination-button" type="button">
+                <span class="visually-hidden">Первый слайдер.</span>
+              </button>
+            </li>
+            <li class="goods-pagination-item">
+              <button class="goods-pagination-button" type="button">
+                <span class="visually-hidden">Второй слайдер.</span>
+              </button>
+            </li>
+            <li class="goods-pagination-item">
+              <button class="goods-pagination-button" type="button">
+                <span class="visually-hidden">Третий слайдер.</span>
+              </button>
+            </li>
+          </ol>
+          <h3 class="visually-hidden">Социальные сети.</h3>
+          <ul class="social-list reset-list">
+            <li class="social-item">
+              <a class="social-button" href="https://vk.com/htmlacademy">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26 14c0 6.627-5.373 12-12 12S2 20.627 2 14 7.373 2 14 2s12 5.373 12 12Zm-11.412 2.975h-.717s-1.582.083-2.976-1.188c-1.52-1.388-2.863-4.14-2.863-4.14s-.077-.18.007-.268c.095-.098.352-.104.352-.104l1.715-.01s.161.024.277.098a.476.476 0 0 1 .149.176s.277.615.644 1.17c.716 1.085 1.05 1.322 1.293 1.206.354-.17.248-1.533.248-1.533s.007-.495-.178-.716c-.143-.17-.414-.22-.533-.235-.096-.011.062-.207.267-.295.309-.133.854-.14 1.498-.135.501.005.645.032.842.074.455.096.44.405.41 1.07-.01.2-.02.43-.02.697 0 .06-.002.124-.004.19-.01.34-.023.73.233.876.132.074.453.011 1.256-1.185.381-.566.667-1.233.667-1.233s.062-.119.16-.17c.098-.052.232-.036.232-.036l1.805-.01s.542-.056.63.158c.091.226-.203.751-.94 1.612-.696.813-1.036 1.115-1.01 1.38.02.196.242.372.67.72.888.722 1.124 1.101 1.18 1.192a.447.447 0 0 0 .011.016c.398.578-.44.623-.44.623l-1.603.02s-.345.06-.798-.214c-.237-.142-.469-.375-.69-.597-.337-.339-.649-.652-.915-.578-.447.124-.433.967-.433.967s.004.18-.098.276c-.11.105-.328.126-.328.126Z" fill="#FCFCFC"/>
+                  <path d="M14 24C8.477 24 4 19.523 4 14H0c0 7.732 6.268 14 14 14v-4Zm10-10c0 5.523-4.477 10-10 10v4c7.732 0 14-6.268 14-14h-4ZM14 4c5.523 0 10 4.477 10 10h4c0-7.732-6.268-14-14-14v4Zm0-4C6.268 0 0 6.268 0 14h4C4 8.477 8.477 4 14 4V0Z" fill="#FCFCFC" fill-opacity=".2"/>
+                </svg>
+                <span class="visually-hidden">Vkontakte.</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="https://www.facebook.com/htmlacademy/">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26 14c0 6.627-5.373 12-12 12S2 20.627 2 14 7.373 2 14 2s12 5.373 12 12Zm-9.571.9H15V20h-2.286v-5.1H11v-2.4h1.714v-1.68c0-1.826 1.102-2.82 2.653-2.82.743 0 1.447.058 1.633.084V10.1h-.857C15 10.1 15 10.682 15 11.3v1.2h2l-.571 2.4Z" fill="#FCFCFC"/>
+                  <path d="M14 24C8.477 24 4 19.523 4 14H0c0 7.732 6.268 14 14 14v-4Zm10-10c0 5.523-4.477 10-10 10v4c7.732 0 14-6.268 14-14h-4ZM14 4c5.523 0 10 4.477 10 10h4c0-7.732-6.268-14-14-14v4Zm0-4C6.268 0 0 6.268 0 14h4C4 8.477 8.477 4 14 4V0Z" fill="#FCFCFC" fill-opacity=".2"/>
+                </svg>
+                <span class="visually-hidden">Facebook.</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="https://www.instagram.com/htmlacademy/">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26 14c0 6.6274-5.3726 12-12 12-6.62742 0-12-5.3726-12-12C2 7.37258 7.37258 2 14 2c6.6274 0 12 5.37258 12 12Zm-9.5268-5.964C15.8336 8.006 15.6302 8 14 8c-1.6302 0-1.8336.0078-2.4732.036-.6396.03-1.074.1302-1.4568.279a2.93825 2.93825 0 0 0-1.0632.6918A2.92795 2.92795 0 0 0 8.315 10.07c-.1488.3828-.249.8172-.279 1.4568C8.006 12.1664 8 12.3698 8 14c0 1.6302.0078 1.8336.036 2.4732.03.639.1302 1.0746.279 1.4568a2.9423 2.9423 0 0 0 .6918 1.0632c.29972.3054.6626.5415 1.0632.6918.3828.1482.8178.249 1.4568.279.6396.03.843.036 2.4732.036 1.6302 0 1.8336-.0078 2.4732-.036.639-.03 1.0746-.1308 1.4568-.279a2.94793 2.94793 0 0 0 1.0632-.6918c.3055-.2996.5416-.6625.6918-1.0632.1482-.3828.249-.8178.279-1.4568.03-.6396.036-.843.036-2.4732 0-1.6302-.0078-1.8336-.036-2.4732-.03-.639-.1308-1.0746-.279-1.4568a2.94438 2.94438 0 0 0-.6918-1.0632c-.3336-.333-.6672-.5394-1.0632-.6918-.3828-.1488-.8178-.249-1.4568-.279Zm-4.5945 3.8427A3.00008 3.00008 0 0 1 14 11a3.00008 3.00008 0 0 1 3 3 3.00008 3.00008 0 0 1-3 3 3.00008 3.00008 0 0 1-3-3c0-.7956.3161-1.5587.8787-2.1213Zm5.8016-1.559a.74969.74969 0 0 1 .2197.5303c0 .1989-.079.3897-.2197.5303a.74969.74969 0 0 1-.5303.2197.74969.74969 0 0 1-.5303-.2197.74969.74969 0 0 1-.2197-.5303c0-.1989.079-.3897.2197-.5303A.74969.74969 0 0 1 17.15 10.1c.1989 0 .3897.079.5303.2197Zm-2.4075 2.4075A1.7999 1.7999 0 0 0 14 12.2c-.4774 0-.9352.1896-1.2728.5272A1.7999 1.7999 0 0 0 12.2 14c0 .4774.1896.9352.5272 1.2728A1.7999 1.7999 0 0 0 14 15.8c.4774 0 .9352-.1896 1.2728-.5272A1.7999 1.7999 0 0 0 15.8 14c0-.4774-.1896-.9352-.5272-1.2728Z" fill="#FCFCFC"/>
+                  <path d="M14 24C8.47715 24 4 19.5228 4 14H0c0 7.732 6.26801 14 14 14v-4Zm10-10c0 5.5228-4.4772 10-10 10v4c7.732 0 14-6.268 14-14h-4ZM14 4c5.5228 0 10 4.47715 10 10h4c0-7.73199-6.268-14-14-14v4Zm0-4C6.26801 0 0 6.26801 0 14h4C4 8.47715 8.47715 4 14 4V0Z" fill="#FCFCFC" fill-opacity=".2"/>
+                </svg>
+                <span class="visually-hidden">Instagram.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="gallery-hidden content-container">
+          <h2 class="visually-hidden">Галерея мороженого.</h2>
+          <p class="goods-title">Карамельный пломбир с маршмеллоу</p>
+          <p class="goods-description">
+            Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.  
+          </p>
+          <a class="button-order" href="#">Заказать</a>
+          <ul class="goods-list reset-list">
+            <li class="goods-item reset-list">
+              <button class="slider-button" type="button">
+                <span class="visually-hidden">Предыдущее фото.</span>
+              </button>
+              <img class="goods-image" src="#" width="306" height="507" alt="Карамельный пломбир.">
+              <button class="slider-button" type="button">
+                <span class="visually-hidden">Следующее фото.</span>
+              </button>
+            </li>
+            <li class="goods-item">
+              <img class="goods-image-small" src="#" width="100" height="150" alt="Пломбир с клубничным джемом.">
+            </li>
+            <li class="goods-item">
+              <img class="goods-image-small" src="#" width="100" height="150" alt="Сливочное мороженое.">
+            </li>
+          </ul>
+          <ol class="pagination-for-goods reset-list">
+            <li class="goods-pagination-item">
+              <button class="goods-pagination-button" type="button">
+                <span class="visually-hidden">Первый слайдер.</span>
+              </button>
+            </li>
+            <li class="goods-pagination-item">
+              <button class="goods-pagination-button" type="button">
+                <span class="visually-hidden">Второй слайдер.</span>
+              </button>
+            </li>
+            <li class="goods-pagination-item">
+              <button class="goods-pagination-button" type="button">
+                <span class="visually-hidden">Третий слайдер.</span>
+              </button>
+            </li>
+          </ol>
+          <h3 class="visually-hidden">Социальные сети.</h3>
+          <ul class="social-list reset-list">
+            <li class="social-item">
+              <a class="social-button" href="https://vk.com/htmlacademy">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26 14c0 6.627-5.373 12-12 12S2 20.627 2 14 7.373 2 14 2s12 5.373 12 12Zm-11.412 2.975h-.717s-1.582.083-2.976-1.188c-1.52-1.388-2.863-4.14-2.863-4.14s-.077-.18.007-.268c.095-.098.352-.104.352-.104l1.715-.01s.161.024.277.098a.476.476 0 0 1 .149.176s.277.615.644 1.17c.716 1.085 1.05 1.322 1.293 1.206.354-.17.248-1.533.248-1.533s.007-.495-.178-.716c-.143-.17-.414-.22-.533-.235-.096-.011.062-.207.267-.295.309-.133.854-.14 1.498-.135.501.005.645.032.842.074.455.096.44.405.41 1.07-.01.2-.02.43-.02.697 0 .06-.002.124-.004.19-.01.34-.023.73.233.876.132.074.453.011 1.256-1.185.381-.566.667-1.233.667-1.233s.062-.119.16-.17c.098-.052.232-.036.232-.036l1.805-.01s.542-.056.63.158c.091.226-.203.751-.94 1.612-.696.813-1.036 1.115-1.01 1.38.02.196.242.372.67.72.888.722 1.124 1.101 1.18 1.192a.447.447 0 0 0 .011.016c.398.578-.44.623-.44.623l-1.603.02s-.345.06-.798-.214c-.237-.142-.469-.375-.69-.597-.337-.339-.649-.652-.915-.578-.447.124-.433.967-.433.967s.004.18-.098.276c-.11.105-.328.126-.328.126Z" fill="#FCFCFC"/>
+                  <path d="M14 24C8.477 24 4 19.523 4 14H0c0 7.732 6.268 14 14 14v-4Zm10-10c0 5.523-4.477 10-10 10v4c7.732 0 14-6.268 14-14h-4ZM14 4c5.523 0 10 4.477 10 10h4c0-7.732-6.268-14-14-14v4Zm0-4C6.268 0 0 6.268 0 14h4C4 8.477 8.477 4 14 4V0Z" fill="#FCFCFC" fill-opacity=".2"/>
+                </svg>
+                <span class="visually-hidden">Vkontakte.</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="https://www.facebook.com/htmlacademy/">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26 14c0 6.627-5.373 12-12 12S2 20.627 2 14 7.373 2 14 2s12 5.373 12 12Zm-9.571.9H15V20h-2.286v-5.1H11v-2.4h1.714v-1.68c0-1.826 1.102-2.82 2.653-2.82.743 0 1.447.058 1.633.084V10.1h-.857C15 10.1 15 10.682 15 11.3v1.2h2l-.571 2.4Z" fill="#FCFCFC"/>
+                  <path d="M14 24C8.477 24 4 19.523 4 14H0c0 7.732 6.268 14 14 14v-4Zm10-10c0 5.523-4.477 10-10 10v4c7.732 0 14-6.268 14-14h-4ZM14 4c5.523 0 10 4.477 10 10h4c0-7.732-6.268-14-14-14v4Zm0-4C6.268 0 0 6.268 0 14h4C4 8.477 8.477 4 14 4V0Z" fill="#FCFCFC" fill-opacity=".2"/>
+                </svg>
+                <span class="visually-hidden">Facebook.</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="https://www.instagram.com/htmlacademy/">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26 14c0 6.6274-5.3726 12-12 12-6.62742 0-12-5.3726-12-12C2 7.37258 7.37258 2 14 2c6.6274 0 12 5.37258 12 12Zm-9.5268-5.964C15.8336 8.006 15.6302 8 14 8c-1.6302 0-1.8336.0078-2.4732.036-.6396.03-1.074.1302-1.4568.279a2.93825 2.93825 0 0 0-1.0632.6918A2.92795 2.92795 0 0 0 8.315 10.07c-.1488.3828-.249.8172-.279 1.4568C8.006 12.1664 8 12.3698 8 14c0 1.6302.0078 1.8336.036 2.4732.03.639.1302 1.0746.279 1.4568a2.9423 2.9423 0 0 0 .6918 1.0632c.29972.3054.6626.5415 1.0632.6918.3828.1482.8178.249 1.4568.279.6396.03.843.036 2.4732.036 1.6302 0 1.8336-.0078 2.4732-.036.639-.03 1.0746-.1308 1.4568-.279a2.94793 2.94793 0 0 0 1.0632-.6918c.3055-.2996.5416-.6625.6918-1.0632.1482-.3828.249-.8178.279-1.4568.03-.6396.036-.843.036-2.4732 0-1.6302-.0078-1.8336-.036-2.4732-.03-.639-.1308-1.0746-.279-1.4568a2.94438 2.94438 0 0 0-.6918-1.0632c-.3336-.333-.6672-.5394-1.0632-.6918-.3828-.1488-.8178-.249-1.4568-.279Zm-4.5945 3.8427A3.00008 3.00008 0 0 1 14 11a3.00008 3.00008 0 0 1 3 3 3.00008 3.00008 0 0 1-3 3 3.00008 3.00008 0 0 1-3-3c0-.7956.3161-1.5587.8787-2.1213Zm5.8016-1.559a.74969.74969 0 0 1 .2197.5303c0 .1989-.079.3897-.2197.5303a.74969.74969 0 0 1-.5303.2197.74969.74969 0 0 1-.5303-.2197.74969.74969 0 0 1-.2197-.5303c0-.1989.079-.3897.2197-.5303A.74969.74969 0 0 1 17.15 10.1c.1989 0 .3897.079.5303.2197Zm-2.4075 2.4075A1.7999 1.7999 0 0 0 14 12.2c-.4774 0-.9352.1896-1.2728.5272A1.7999 1.7999 0 0 0 12.2 14c0 .4774.1896.9352.5272 1.2728A1.7999 1.7999 0 0 0 14 15.8c.4774 0 .9352-.1896 1.2728-.5272A1.7999 1.7999 0 0 0 15.8 14c0-.4774-.1896-.9352-.5272-1.2728Z" fill="#FCFCFC"/>
+                  <path d="M14 24C8.47715 24 4 19.5228 4 14H0c0 7.732 6.26801 14 14 14v-4Zm10-10c0 5.5228-4.4772 10-10 10v4c7.732 0 14-6.268 14-14h-4ZM14 4c5.5228 0 10 4.47715 10 10h4c0-7.73199-6.268-14-14-14v4Zm0-4C6.26801 0 0 6.26801 0 14h4C4 8.47715 8.47715 4 14 4V0Z" fill="#FCFCFC" fill-opacity=".2"/>
+                </svg>
+                <span class="visually-hidden">Instagram.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
         <section class="gifts content-container">
           <h2 class="gifts-title">Заказывайте мороженое и получайте подарки!</h2>
-          <p class="gifts-offer">Малинка даром!</p>
-          <p class="gifts-description">
-            При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
-          </p>
-          <button class="button-gift" type="button">
-            Хочу подарок
-          </button>
-          <img class="gift-image" src="#" width="181" height="284" alt="Малинка даром.">
-          <p class="gifts-offer">Маршмеллоу даром!</p>
-          <p class="gifts-description">
-            При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
-          </p>
-          <button class="button-gift" type="button">
-            Хочу подарок
-          </button>
-          <img class="gift-image" src="#" width="232" height="359" alt="Маршмеллоу даром.">
+          <div class="gifts-wrapper">
+            <div class="offer-wrapper">
+              <div class="gift-block">
+                <p class="gifts-offer">Малинка даром!</p>
+                <p class="gifts-description">
+                  При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
+                </p>
+                <button class="button-gift" type="button">
+                  Хочу подарок
+                </button>
+              </div>
+              <div class="gift-image-wrapper">
+                <img class="gift-image" src="../images/raspberries-for-free.png" width="181" height="284" alt="Малинка даром.">
+              </div>
+            </div>
+            <div class="offer-wrapper">
+              <div class="gift-block">
+                <p class="gifts-offer">Маршмеллоу даром!</p>
+                <p class="gifts-description">
+                  При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
+                </p>
+                <button class="button-gift" type="button">
+                  Хочу подарок
+                </button>
+              </div>
+              <div class="gift-image-wrapper">
+                <img class="gift-image" src="#" width="232" height="359" alt="Маршмеллоу даром.">
+              </div>
+            </div>
+          </div>
         </section>
         <section class="popular-tastes content-container">
           <h2 class="popular-tastes-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
@@ -171,29 +331,31 @@
           </ul>
         </section>
         <section class="shop-description content-container">
-          <h2 class="shop-description-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
-          <ul class="shop-description-list reset-list ">
-            <li class="shop-description-item">
-              <p class="description-item">
-                Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.
-              </p>
-            </li>
-            <li class="shop-description-item">
-              <p class="description-item">
-                Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.
-              </p>
-            </li>
-            <li class="shop-description-item">
-              <p class="description-item">
-                Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.
-              </p>
-            </li>
-            <li class="shop-description-item">
-              <p class="description-item">
-                Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.
-              </p>
-            </li>
-          </ul>
+          <div class="shop-description-wrapper">
+            <h2 class="shop-description-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
+            <ul class="shop-description-list reset-list ">
+              <li class="shop-description-item">
+                <p class="description-item">
+                  Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.
+                </p>
+              </li>
+              <li class="shop-description-item">
+                <p class="description-item">
+                  Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.
+                </p>
+              </li>
+              <li class="shop-description-item">
+                <p class="description-item">
+                   Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.
+                </p>
+              </li>
+              <li class="shop-description-item">
+                <p class="description-item">
+                  Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
         <div class="blocks-wrapper content-container">
           <article class="article">
