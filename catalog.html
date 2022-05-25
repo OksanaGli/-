@@ -80,74 +80,80 @@
         </section>
         <section class="sorting content-container">
           <h2 class="visually-hidden">Сортировка.</h2>
-          <p class="result-of-search">Сортировка:</p>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="popular">по популярности</option>
-          </select>
           <form class="filters" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter-price">
-              
-                <legend class="visually-hidden">Цена:</legend>
-                <label class="price-title">Цена:
-                  <input class="range-input range-first" type="number" value="100" <span>₽ –</span>
-                </label>
-                <label class="price-title">
-                  <input class="range-input range-second" type="number" value="500" <span>₽</span>
-                </label>
-             
-              <div class="range">
-                <div class="range-scale">
-                  <div class="range-bar" style="left: 32px; width: 56px">
-                    <button class="range-toggle toggle-min">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="range-toggle toggle-max">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
+            <div class="first-group">
+              <div class="select-wrapper">
+                <p class="result-of-search">Сортировка:</p>
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">по популярности</option>
+                </select>
+              </div>
+              <fieldset class="filter-price">
+                <div class="sorting-price-wrapper">
+                  <legend class="visually-hidden">Цена:</legend>
+                  <label class="price-title">Цена:
+                    <input class="range-input range-first" type="number" value="100" <span>₽ –</span>
+                  </label>
+                  <label class="price-title">
+                    <input class="range-input range-second" type="number" value="500" <span>₽</span>
+                  </label>
+                </div>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 32px; width: 56px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-            </fieldset>
-            <fieldset class="filter-group">
-              <legend class="filter-title">Жирность:</legend>
-              <ul class="filter-list reset-list">
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="percent" value="zero">
-                    <span class="control-mark"></span>
-                    <span class="control-label">0%</span>
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="percent" value="up-to-ten" checked>
-                    <span class="control-mark"></span>
-                    <span class="control-label">до 10%</span>
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="percent" value="up-to-thirty">
-                    <span class="control-mark"></span>
-                    <span class="control-label">до 30%</span>
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="percent" value="above-thirty">
-                    <span class="control-mark"></span>
-                    <span class="control-label">выше 30%</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+              </fieldset>
+              <fieldset class="filter-group">
+                <legend class="filter-title">Жирность:</legend>
+                <ul class="filter-list reset-list">
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="percent" value="zero">
+                      <span class="control-mark"></span>
+                      <span class="control-label">0%</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="percent" value="up-to-ten" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">до 10%</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="percent" value="up-to-thirty">
+                      <span class="control-mark"></span>
+                      <span class="control-label">до 30%</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="percent" value="above-thirty">
+                      <span class="control-mark"></span>
+                      <span class="control-label">выше 30%</span>
+                    </label>
+                  </li>                 
+                </ul>
+              </fieldset>
+            </div>
             <div class="second-group">
               <fieldset class="filter-group">
                 <legend class="filter-title">Наполнители:</legend>
-                <ul class="filter-list filter-list-checkbox reset-list">
+                <ul class="filter-list reset-list">
                   <li class="filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
                       <span class="control-mark"></span>
+                      <span class="control-checkbox"></span>
                       <span class="control-label">шоколадные</span>
                     </label>
                   </li>
@@ -155,6 +161,7 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="sugar sprinkles" checked>
                       <span class="control-mark"></span>
+                      <span class="control-checkbox"></span>
                       <span class="control-label">сахарные посыпки</span>
                     </label>
                   </li>
@@ -162,6 +169,7 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="fruits">
                       <span class="control-mark"></span>
+                      <span class="control-checkbox"></span>
                       <span class="control-label">фрукты</span>
                     </label>
                   </li>
@@ -359,34 +367,38 @@
               </div>
             </li>
           </ul>
-          <button class="show-more-button" type="button">Показать ещё</button>
-          <ul class="pagination-list reset-list">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>                      
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
+          <div class="pagination-catalog-container">
+            <div class="show-more-button-wrapper">
+              <button class="show-more-button" type="button">Показать ещё</button>
+            </div>
+            <ul class="pagination-list reset-list">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-prev pagination-disabled">
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>                      
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
       <footer class="footer content-container">
