@@ -33,6 +33,10 @@
     color: #2D3440;
     background-color: #FFFFFF; 
   }
+
+  .wrapper {
+    background-color: #FEAFC3;
+  }
   
   .container {
     display: flex;
@@ -449,6 +453,18 @@
     left: 18px;
   }
 
+  .subcatalog-list-selected {
+    background-color: #FF4A78;
+  }
+
+  .subcatalog-link-selected {
+    color: #FCFCFC;
+  }
+
+  .subcatalog-link-selected:hover,:active {
+    color: #2D3440;
+  }
+
   .subcatalog-list:hover {
     background-color: #FFCBD8;
   }
@@ -499,6 +515,7 @@
 
   .search-field[type="search"]:focus {
     outline: none;
+    display: block;
   }
 
   .search-form-open:hover .search-form-wrapper {
@@ -541,6 +558,10 @@
   }
 
   .registration-form-open:hover .registration-form {
+    display: block;
+  }
+
+  .registration-form-open:active .registration-form {
     display: block;
   }
 
@@ -1273,6 +1294,8 @@
     background-color: #F5DEB3;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
+    background-position: center;
     border-radius: 16px;
     padding: 24px;
     margin-bottom: 80px;
@@ -1353,6 +1376,8 @@
     background-color: #FCFCFC;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
+    background-position: center;
     border-radius: 16px;
     padding: 33px 235px 68px 32px;
     width: 303px;
@@ -1510,6 +1535,8 @@
     background-color: #DCDCDC;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
+    background-position: center;
     border-radius: 16px;
     margin-bottom: 80px;
   }
@@ -1656,6 +1683,8 @@
     background-color: #DCDCDC;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
+    background-position: center;
     border-radius: 16px;
     padding: 64px 0 64px 64px;
   }
@@ -1992,20 +2021,18 @@
     left: 0;
     width: 14px;
     height: 14px;
-    border: 1px solid #2D3440;
+    border: 1.5px solid #2D3440;
     border-radius: 2px;
     display: block;
     cursor: pointer;
   }
 
-  .control-input[type="checkbox"]:checked + .control-mark::before {
+  .control-mark-checked {
     position: absolute;
-    content: " ";
-    top: -6px;
-    left: -4px;
-    width: 24px;
-    height: 24px;
-    background-image: url("../images/icons/checkmark.svg"); 
+    top: 3px;
+    left: 0px;
+    content: url("../images/icons/checkmark.svg");
+    cursor: pointer;
   }
 
   .control-input[type="radio"] + .control-mark {
@@ -2024,7 +2051,19 @@
   }
 
   .control:hover .control-mark {
-    border: 1px solid #FCFCFC;
+    border: 1.5px solid #FCFCFC;
+  }
+
+  .control:hover .control-mark-checked {
+    fill: #FCFCFC;
+  }
+
+  .control-input[type="checkbox"]:disabled + .control-mark {
+    border: 2px solid rgba(45, 52, 64, 0.4);
+  }
+
+  .control-input[type="checkbox"]:disabled + .control-mark-checked {
+    fill: rgba(45, 52, 64, 0.4);
   }
 
   .control-input[type="radio"]:hover + .control-mark::before {
@@ -2266,13 +2305,21 @@
   /* ------footer------ */
 
   .footer {
+    position: relative;
     display: flex;
     padding-top: 40px;
     padding-bottom: 48px;
+    padding-right: 12px;
   }
 
-  .footer-catalog {
-    border-top: 1px solid rgba(252, 252, 252, 0.3);
+  .footer-catalog::before {
+    position: absolute;
+    content: " ";
+    width: 1170px;
+    height: 1px;
+    background-color: rgba(252, 252, 252, 0.3);
+    left: 0;
+    top: -5px;
   }
 
   .social-footer {
@@ -2353,16 +2400,19 @@
 
   .information-list {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 146px 216px;
     grid-template-rows: repeat(2, auto);
-    gap: 6px 6px;
+    gap: 6px 3px;
     padding-left: 24px;
-    margin-right: 185px;
+  }
+
+  .link-wrapper {
+    margin-left: auto;
   }
 
   .html-image {
-    padding: 4px 8px;
-    margin-bottom: 4px;
+    padding: 4px 8px 2px 8px;
+    margin-bottom: 5px;
   }
 
   .html-image-link:focus .html-image {
@@ -2377,6 +2427,7 @@
 
   .html-text-link-wrapper {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 8px;
   }
 
@@ -2389,6 +2440,8 @@
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   .html-text-link {
@@ -2398,6 +2451,8 @@
     text-decoration: none;
     color: #2D3440;
     margin: 0 3px 0 0;
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   .html-text-link:focus {
