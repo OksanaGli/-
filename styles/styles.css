@@ -422,6 +422,10 @@
     display: none;
   }
 
+  .subcatalog:focus-within {
+    display: block;
+  }
+
   .navigation-item-subcatalog {
     height: 50px;
     display: flex;
@@ -528,6 +532,10 @@
     border-radius: 30px;
   }
 
+  .search-form-wrapper:focus-within {
+    display: block;
+  }
+
   .search-form-open:hover svg {
     fill: #FCFCFC;
   }
@@ -545,6 +553,10 @@
     border-radius: 4px;
     z-index: 2;
     display: none;
+  }
+
+  .registration-form:focus-within {
+    display: block;
   }
 
   .registration-form-open:hover .navigation-link-active {
@@ -680,6 +692,10 @@
     right: 25px;
     z-index: 2;
     display: none;
+  }
+
+  .popover:focus-within {
+    display: block;
   }
 
   .popover-open:hover .popover {
