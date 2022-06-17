@@ -32,6 +32,7 @@
     line-height: 22px;
     color: #2D3440;
     background-color: #FFFFFF; 
+    margin: 0;
   }
 
   .wrapper {
@@ -433,12 +434,30 @@
   }
 
   .navigation-item-subcatalog:hover .navigation-link-active {
-    background-color: #FF4A78;
-    color: #FCFCFC;
+    background-color: rgba(252, 252, 252, 0.5);
+    color: #2D3440;
     border-radius: 30px;
   }
 
   .navigation-item-subcatalog:hover .subcatalog {
+    display: block;
+  }
+
+  .navigation-item-subcatalog:focus .subcatalog {
+    display: block;
+  }
+
+  .navigation-item-subcatalog:focus {
+    outline: none;
+  }
+
+  .navigation-item-subcatalog:focus .navigation-link-active {
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    outline: 2px solid #2D3440;
+  }
+
+  .navigation-item-subcatalog:focus-within .subcatalog {
     display: block;
   }
 
@@ -475,6 +494,7 @@
 
   .subcatalog-list:active {
     background-color: #FF7799;
+    border-radius: 0;
   }
 
   /* ------search------ */
@@ -527,17 +547,29 @@
   }
 
   .search-form-open:hover .navigation-link-active {
-    background-color: #FF4A78;
-    color: #FCFCFC;
-    border-radius: 30px;
+    background-color: rgba(252, 252, 252, 0.5);
   }
 
   .search-form-wrapper:focus-within {
     display: block;
   }
 
-  .search-form-open:hover svg {
-    fill: #FCFCFC;
+  .search-form-open:focus .search-form-wrapper {
+    display: block;
+  }
+
+  .search-form-open:focus {
+    outline: none;
+  }
+
+  .search-form-open:focus .navigation-link-search {
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    outline: 2px solid #2D3440;
+  }
+
+  .search-form-open:focus-within .search-form-wrapper {
+    display: block;
   }
 
   /* ------registration------ */
@@ -560,13 +592,7 @@
   }
 
   .registration-form-open:hover .navigation-link-active {
-    background-color: #FF4A78;
-    color: #FCFCFC;
-    border-radius: 30px;
-  }
-  
-  .registration-form-open:hover svg {
-    fill: #FCFCFC;
+    background-color: rgba(252, 252, 252, 0.5);
   }
 
   .registration-form-open:hover .registration-form {
@@ -574,6 +600,24 @@
   }
 
   .registration-form-open:active .registration-form {
+    display: block;
+  }
+
+  .registration-form-open:focus .registration-form {
+    display: block;
+  }
+
+  .registration-form-open:focus {
+    outline: none;
+  }
+
+  .registration-form-open:focus .navigation-link-active {
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    outline: 2px solid #2D3440;
+  }
+
+  .registration-form-open:focus-within .registration-form  {
     display: block;
   }
 
@@ -703,13 +747,25 @@
   }
 
   .popover-open:hover .navigation-link-active {
-    background-color: #FF4A78;
-    color: #FCFCFC;
-    border-radius: 30px;
+    background-color: rgba(252, 252, 252, 0.5);
   }
 
-  .popover-open:hover svg {
-    fill: #FCFCFC;
+  .popover-open:focus .popover {
+    display: block;
+  }
+
+  .popover-open:focus {
+    outline: none;
+  }
+
+  .popover-open:focus .navigation-link-active {
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    outline: 2px solid #2D3440;
+  }
+
+  .popover-open:focus-within .popover {
+    display: block;
   }
   
   .popover-title {
