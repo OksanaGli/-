@@ -1724,7 +1724,10 @@
     left: 100%;  
     margin-left: 9px;
     transform: translateY(-25px);
-    display: none;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-delay: 0.075s;
   }
 
   .tooltip-text::before {
@@ -1740,12 +1743,8 @@
     top: 13px;
   }
 
-  .tooltip-toggle:active {
-    display: block;
-  }
-
-  .tooltip-toggle:hover .tooltip-text {
-    display: block;
+  .tooltip-toggle:hover .tooltip-text-hidden {
+    opacity: 1;
   }
 
   /* ------contacts------ */
